@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham the Editor</title>
+    <link rel="shortcut icon" href="file:///C:/Users/priya/Desktop/shubham%20sir/pic2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: black;
+        color: white;
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+        background: rgb(28, 28, 28);
+    }
+    ul{
+        padding-top: 25px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: red;
+        font-size: 1.09rem;
+        
+    }
+    main hr{
+        border: 0;
+        background: gray;
+        height: 1.2px;
+        margin: 60px 84px;
+    }
+    .left{
+        margin-top: 25px; 
+        font-size: 30px;
+        font-family: "Protest Revolution", sans-serif;
+    }
+    
+    
+    .rightsection {
+        width: 80%;
+
+    }
+
+    .rightsection img {
+        width: 370px;
+        height: 370px;
+        border-radius: 200px;
+        margin-right: 20px;
+        margin-left:200px ;
+    }
+
+    .red {
+        color: red;
+        font-family: "Protest Revolution", sans-serif;
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 100px;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .contect-left-title{
+        font-weight: 600;
+        color: red;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .contect-left-title hr{
+        border: none;
+        width: 120px;
+        height: 5px;
+        background-color: red;
+        border-radius: 10px;
+        
+        margin-top: 10px;
+    }
+    .contact-input{
+        width: 400px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 5px;
+        font-weight: 500;
+        color: #666;
+        border-radius: 50px;
+    }
+    .contact-left textarea{
+        height: 140px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+    .contact-input:focus{
+        border: 2px solid #ff994f;
+    }
+    .contact-input::placeholder{
+        color: #a9a9a9;
+        
+
+    }
+    .contact-left button{
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 15px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(270deg,#ff994f,#fa5da6 );
+        cursor: pointer;
+    
+    }
+
+    @media screen and (max-width: 1000px) {
+
+            nav{
+               flex-direction: column;
+               height: 120px;
+               align-items: center;
+            }
+            nav ul li a{
+                font-size: medium;
+            }
+
+
+            .left{
+                font-size: medium;
+            }
+            .right{
+                margin-bottom: 100px;
+            }
+
+            .trs{
+                margin-top: 30px;
+                margin-right: 0px;
+            }
+            .line{
+                margin: 45px;
+            }
+            .k{
+                margin: -50px;
+            }
+
+            .k div{
+                height: 270vh;
+            }
+            .rightsection img {
+                height: 250px;
+                width: 250px;
+                margin-left: 33px;
+            }
+            .contact-input{
+                width: 80vw;
+                margin-left: -70px;
+            }
+            .rightsection{
+                display: none;
+            }
+            .container{
+                margin-right: 100px;
+            }
+            .contect-left-title{
+                font-size: 20px;
+                margin-left: -70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <body>
+       
+        <header>
+            <nav>
+                <div class="left">Shubham the Editor</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="video.html">Videos</a></li>
+                        <li><a href="about.html">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contect-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                
+                <input type="hidden" name="access_key" value="0ae9865f-d2e5-4450-b880-ad4f865b289f">
+                <input type="text" name="name" placeholder="Your name" class="contact-input" required>
+                <input type="email" name="email" placeholder="Your email" class="contact-input" required>
+                <textarea name="Message" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="rightsection">
+                <img src="pic2.png" alt="Shubham">
+            </div>
+        </div>
+       
+        
+     
+        <div class="other">
+            
+        </div>
+</body>
+</html>

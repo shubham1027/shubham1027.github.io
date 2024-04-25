@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham the Editor</title>
+    <link rel="shortcut icon" href="file:///C:/Users/priya/Desktop/shubham%20sir/pic2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background: rgb(28, 28, 28);
+        }
+
+        ul {
+            padding-top: 25px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            font-size: 1.09rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: gray;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            margin-top: 25px;
+            font-size: 30px;
+            font-family: "Protest Revolution", sans-serif;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 50px 0;
+        }
+
+        .rightsection {
+            width: 80%;
+
+        }
+
+        .rightsection img {
+            width: 370px;
+            height: 370px;
+            border-radius: 200px;
+            margin-right: 20px;
+        }
+
+        .red {
+            color: red;
+            font-family: "Protest Revolution", sans-serif;
+        }
+
+        .line {
+            border: 0;
+            background: white;
+            height: 0.1px;
+            margin: 60px 84px;
+        }
+
+        .button {
+            height: 10px;
+        }
+
+        .trs {
+            height: 50px;
+            width: 100px;
+            border-radius: 30px;
+            background: rgb(22, 21, 21);
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .trs a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .trs:hover {
+            background-color: red;
+            color: white;
+
+        }
+
+        .trs a:hover {
+            font-size: large;
+        }
+
+        .k {
+            background-color: black;
+            height: 600px;
+        }
+
+        .k div {
+            background-color: #141313;
+            margin: 60px;
+            height: auto;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .r {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .about {
+            margin: 10px;
+            padding-top: 30px;
+        }
+
+        .button .vid {
+            background-color: rgb(44, 40, 40);
+            height: 500px;
+            width: 250px;
+
+
+        }
+
+        .button .vid .w {
+            height: 10px;
+            width: 5px;
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .firstsection {
+                flex-direction: column-reverse;
+                margin-right: 60px;
+            }
+
+            .leftsection {
+                text-align: center;
+                font-size: 34px;
+                margin-left: 55px;
+            }
+
+            .firstsection>div {
+                width: 85%;
+            }
+
+            .rightsection img {
+                width: 270px;
+                margin: 23px;
+            }
+
+            nav{
+               flex-direction: column;
+               height: 120px;
+               align-items: center;
+            }
+            nav ul li a{
+                font-size: medium;
+            }
+
+
+            .left{
+                font-size: medium;
+            }
+            .right{
+                margin-bottom: 10px;
+            }
+
+            .trs{
+                margin-top: 30px;
+                margin-right: 0px;
+            }
+            .line{
+                margin: 45px;
+            }
+            .k{
+                margin: auto;
+            }
+
+            .k div{
+                height: auto;
+                margin: auto;
+            }
+           
+              
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shubham the Editor</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="about.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi i am <span class="red"> SHUBHAM </span>I am a passionate
+                video <span class="red"> Editor</span>
+                <div class="button">
+                    <button class="trs"><a href="video.html">Videos</a>
+
+                    </button>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="pic2.png" alt="Shubham">
+            </div>
+        </section>
+
+
+        <div class="line"></div>
+
+    </main>
+    <div class="r">About Editing</div>
+    <div class="k">
+
+
+        <div class="about"> A video editor is also a person who edits videos using a software application. A video
+            editor can work as a freelancer, an employee, or a contractor for various clients and projects, such as film
+            studios, TV networks, advertising agencies, online platforms, and more.
+
+            A video editor’s job involves:
+
+            Reviewing and selecting the best video footage from the raw material provided by the videographer, director,
+            or producer.
+            Arranging and trimming the video clips according to the script, storyboard, or creative vision of the
+            project.
+            Adding transitions, effects, titles, music, and other elements to enhance the quality and appeal of the
+            video.
+            Adjusting the color, brightness, contrast, and audio levels of the video.
+            Exporting and delivering the final video product in the required format and resolution.
+            Communicating and collaborating with the client and other team members throughout the editing process.
+            A video editor needs to have:
+
+            A creative eye and a sense of storytelling.
+            A technical skill and a proficiency in using video editing software, such as Adobe Premiere Pro, Final Cut
+            Pro, or DaVinci Resolve.
+            A knowledge of video formats, codecs, resolutions, and standards.
+            A good attention to detail and a high level of accuracy.
+            A ability to work under pressure and meet deadlines.
+            A passion for video and a willingness to learn and improve.
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
